@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import key from './key.js'
+// import key from './key.js'
 import './gifs.css'
 
 export default class Gif extends React.Component {
@@ -14,7 +14,7 @@ export default class Gif extends React.Component {
 
   getPhotos() {
     for (let i = 0; i < 6; i++) {
-      axios.get(key.key)
+      axios.get('https://api.giphy.com/v1/gifs/random?api_key=M5y7v64maGCzkUuyIkwmuv35tTAP2CCE&tag=&rating=G')
       .then(res => {
         this.setState((prev) => {
           prev.gifs.push(res.data.data.image_url)
