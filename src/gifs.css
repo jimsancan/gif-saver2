@@ -1,0 +1,9 @@
+li {
+  list-style-type: none;
+}
+
+img {
+  height: 250px;
+  width: 300px;
+  border-bottom: 2rem;
+}
